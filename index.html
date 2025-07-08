@@ -1,91 +1,136 @@
-<!DOCTYPE html>
+# Regenerate the ZIP file properly from a clean HTML structure
+# Define full HTML content again
+html_full = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dewrella - Skincare Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dewrella - Glow Starts Here</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #fce4ec, #e0f2f1);
-      color: #333;
       margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #ffffffcc;
-    }
-    header img {
-      height: 50px;
-    }
-    main {
-      text-align: center;
-      padding: 50px 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-      color: #d81b60;
-    }
-    p {
-      font-size: 1.1em;
-      max-width: 600px;
-      margin: 20px auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff9f5;
+      color: #333;
     }
     .section {
-      background-color: #ffffffcc;
       padding: 40px 20px;
-      margin: 20px 0;
+      text-align: center;
     }
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
-      background-color: #25D366;
+    .header {
+      background: linear-gradient(135deg, #f8e1e7, #d1f1ec);
+      padding: 60px 20px;
+    }
+    .header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #5c4d7d;
+    }
+    .header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .btn {
+      background-color: #8ac6b8;
       color: white;
+      padding: 12px 25px;
+      margin-top: 20px;
       text-decoration: none;
+      border-radius: 30px;
+      display: inline-block;
       font-weight: bold;
-      border-radius: 8px;
     }
-    .contact {
-      font-size: 1em;
-      margin-top: 40px;
-      line-height: 1.8;
+    .product-img {
+      width: 240px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px 10px;
     }
-    .contact a {
-      color: #333;
-      text-decoration: none;
+    .steps {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
     }
-    .contact a:hover {
-      text-decoration: underline;
+    .step-box {
+      width: 250px;
+      background: #f2fefb;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .step-box h3 {
+      color: #6b5283;
+    }
+    footer {
+      background-color: #fceef5;
+      padding: 30px;
+      font-size: 0.9rem;
+    }
+    footer p {
+      color: #444;
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="dewrella-logo.png" alt="Dewrella Logo">
-  </header>
+  <div class="header">
+    <img src="https://via.placeholder.com/150x50?text=DEWRELLA+Logo" alt="Dewrella Logo">
+    <h1>Glow Starts Here ✨</h1>
+    <p>Skincare Combo – Ice Roller ❄ + Silicone Face Brush 💧</p>
+    <a class="btn" href="https://wa.me/919709899812" target="_blank">Order Now on WhatsApp</a>
+  </div>
 
-  <main>
-    <h1>Welcome to Dewrella</h1>
-    <p>Discover skincare tools that simplify your routine and bring visible results. Explore our combo of ice rollers and silicone face brushes — designed to keep your skin fresh, clean, and glowing.</p>
-    <a class="whatsapp-button" href="https://wa.me/919709899812" target="_blank">Order Now on WhatsApp</a>
+  <div class="section">
+    <h2>Our Products</h2>
+    <img class="product-img" src="https://via.placeholder.com/240x240?text=Ice+Roller" alt="Ice Roller">
+    <img class="product-img" src="https://via.placeholder.com/240x240?text=Silicone+Brush" alt="Silicone Face Brush">
+  </div>
 
-    <div class="contact">
-      📧 <a href="mailto:dewrellaskin@gmail.com">dewrellaskin@gmail.com</a><br>
-      📞 <a href="tel:+919709899812">9709899812</a><br>
-      🌐 <a href="https://www.dewrella.in" target="_blank">www.dewrella.in</a><br>
-      📸 <a href="https://instagram.com/dewrella.in" target="_blank">@dewrella.in</a><br>
-      📘 <a href="https://facebook.com/dewrella" target="_blank">/dewrella</a>
+  <div class="section">
+    <h2>How to Use</h2>
+    <div class="steps">
+      <div class="step-box">
+        <h3>Step 1</h3>
+        <p>Unbox your combo</p>
+      </div>
+      <div class="step-box">
+        <h3>Step 2</h3>
+        <p>Use gently on your skin</p>
+      </div>
+      <div class="step-box">
+        <h3>Step 3</h3>
+        <p>Glow like never before ✨</p>
+      </div>
     </div>
-  </main>
+  </div>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p><strong>Dewrella</strong> is a modern skincare tools brand committed to making your skincare routine easier, effective, and more enjoyable.
-    <br><br>We offer tools like <strong>ice rollers</strong> and <strong>silicone face brushes</strong> that help you glow naturally — no complicated routines, just results.
-    <br><br>Affordable. Aesthetic. Everyday essentials your skin will thank you for.</p>
-  </section>
+  <div class="section">
+    <h2>About Dewrella</h2>
+    <p>At Dewrella, we believe skincare should be simple, effective, and joyful. Our tools are designed to elevate your daily routine and give you the glow you deserve.</p>
+  </div>
+
+  <footer>
+    <p><strong>Contact Us:</strong></p>
+    <p>📞 9709899812 | 📧 dewrellaskin@gmail.com</p>
+    <p>🌐 www.dewrella.in | 📸 Instagram: @dewrella.in</p>
+  </footer>
 </body>
 </html>
+"""
+
+# Define paths
+folder = "/mnt/data/dewrella_site_final"
+os.makedirs(folder, exist_ok=True)
+html_file = os.path.join(folder, "index.html")
+
+# Write HTML file
+with open(html_file, "w", encoding="utf-8") as f:
+    f.write(html_full)
+
+# Zip it
+zip_final = "/mnt/data/dewrella_website_final.zip"
+with ZipFile(zip_final, "w") as zipf:
+    zipf.write(html_file, arcname="index.html")
+
+zip_final
