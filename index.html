@@ -1,4 +1,4 @@
-"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -111,24 +111,7 @@
   <footer>
     <p><strong>Contact Us:</strong></p>
     <p>📞 9709899812 | 📧 dewrellaskin@gmail.com</p>
-    <p>🌐 www.dewrella.in |🅾 Instagram: @dewrella.in</p>
+    <p>🌐 www.dewrella.in |🅾 @dewrella.in</p>
   </footer>
 </body>
 </html>
-"""
-
-# Define paths
-folder = "/mnt/data/dewrella_site_final"
-os.makedirs(folder, exist_ok=True)
-html_file = os.path.join(folder, "index.html")
-
-# Write HTML file
-with open(html_file, "w", encoding="utf-8") as f:
-    f.write(html_full)
-
-# Zip it
-zip_final = "/mnt/data/dewrella_website_final.zip"
-with ZipFile(zip_final, "w") as zipf:
-    zipf.write(html_file, arcname="index.html")
-
-zip_final
