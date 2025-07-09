@@ -2,116 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dewrella - Glow Starts Here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dewrella – Glow Tools</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff9f5;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fce4ec, #e0f7fa);
       color: #333;
     }
-    .section {
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    header img {
+      width: 160px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #6A1B9A;
+      margin-top: 10px;
+    }
+    p.tagline {
+      font-size: 1.1em;
+      color: #444;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #7ED6C1;
+      color: white;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px auto;
+      display: inline-block;
+    }
+    section {
       padding: 40px 20px;
       text-align: center;
     }
-    .header {
-      background: linear-gradient(135deg, #f8e1e7, #d1f1ec);
-      padding: 60px 20px;
-    }
-    .header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      color: #5c4d7d;
-    }
-    .header p {
-      font-size: 1.2rem;
-      color: #555;
-    }
-    .btn {
-      background-color: #8ac6b8;
-      color: white;
-      padding: 12px 25px;
-      margin-top: 20px;
-      text-decoration: none;
-      border-radius: 30px;
-      display: inline-block;
+    .section-title {
+      font-size: 1.6em;
       font-weight: bold;
+      color: #222;
+      margin-bottom: 20px;
     }
-    .product-img {
-      width: 240px;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin: 20px 10px;
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .product-grid img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .steps {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 20px;
+      margin-top: 20px;
     }
-    .step-box {
-      width: 250px;
-      background: #f2fefb;
+    .step {
+      background-color: #f9f9f9;
       padding: 20px;
-      border-radius: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-    .step-box h3 {
-      color: #6b5283;
+      border-radius: 12px;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
     }
     footer {
-      background-color: #fceef5;
-      padding: 30px;
-      font-size: 0.9rem;
+      background-color: #f8eafc;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.95em;
     }
-    footer p {
-      color: #444;
+    footer a {
+      color: #6A1B9A;
+      text-decoration: none;
+      display: block;
       margin: 5px 0;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <img src="https://via.placeholder.com/150x50?text=DEWRELLA+Logo" alt="Dewrella Logo">
+
+  <header>
+    <img src="logo.png" alt="Dewrella Logo" />
     <h1>Glow Starts Here ✨</h1>
-    <p>Skincare Combo – Ice Roller ❄ + Silicone Face Brush 💧</p>
+    <p class="tagline">Elevate Your Glow. Effortlessly.</p>
     <a class="btn" href="https://wa.me/919709899812" target="_blank">Order Now on WhatsApp</a>
-  </div>
+  </header>
 
-  <div class="section">
-    <h2>Our Products</h2>
-    <img class="product-img" src="https://via.placeholder.com/240x240?text=Ice+Roller" alt="Ice Roller">
-    <img class="product-img" src="https://via.placeholder.com/240x240?text=Silicone+Brush" alt="Silicone Face Brush">
-  </div>
+  <section>
+    <div class="section-title">Our Products</div>
+    <div class="product-grid">
+      <img src="product1.png" alt="Ice Roller & Silicone Face Brush">
+      <img src="product2.png" alt="Cool Calm Glow – Ice Roller">
+      <img src="product3.png" alt="Cool Skin Calm Glow – Ice Roller">
+      <img src="product4.png" alt="Gentle Deep Clean – Face Brush">
+      <img src="product5.png" alt="Glow Ritual – Combo">
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>How to Use</h2>
+  <section>
+    <div class="section-title">How to Use</div>
     <div class="steps">
-      <div class="step-box">
-        <h3>Step 1</h3>
+      <div class="step">
+        <strong>Step 1</strong>
         <p>Unbox your combo</p>
       </div>
-      <div class="step-box">
-        <h3>Step 2</h3>
+      <div class="step">
+        <strong>Step 2</strong>
         <p>Use gently on your skin</p>
       </div>
-      <div class="step-box">
-        <h3>Step 3</h3>
+      <div class="step">
+        <strong>Step 3</strong>
         <p>Glow like never before ✨</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>About Dewrella</h2>
-    <p>At Dewrella, we believe skincare should be simple, effective, and joyful. Our tools are designed to elevate your daily routine and give you the glow you deserve.</p>
-  </div>
+  <section>
+    <div class="section-title">About Dewrella</div>
+    <p style="max-width: 600px; margin: 0 auto; font-size: 1.1em;">
+      At Dewrella, we believe skincare should be simple, effective, and joyful.
+      Our tools are designed to elevate your daily routine and give you the glow you deserve.
+    </p>
+  </section>
 
   <footer>
-    <p><strong>Contact Us:</strong></p>
-    <p>📞 9709899812 | 📧 dewrellaskin@gmail.com</p>
-    <p>🌐 www.dewrella.in |🅾 @dewrella.in</p>
+    <div class="section-title">Contact Us</div>
+    <a href="https://wa.me/919709899812" target="_blank">📞 9709899812 (WhatsApp)</a>
+    <a href="mailto:dewrellaskin@gmail.com">✉️ dewrellaskin@gmail.com</a>
+    <a href="https://www.dewrella.in" target="_blank">🌐 www.dewrella.in</a>
+    <a href="https://www.instagram.com/dewrella.in" target="_blank"> @dewrella.in</a>
   </footer>
+
 </body>
 </html>
