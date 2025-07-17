@@ -11,90 +11,77 @@
       color: #333;
     }
     header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 1rem 2rem;
-      background: url('images/hero-bg.jpg') no-repeat center/cover;
       text-align: center;
+      padding: 2rem 1rem 1rem;
     }
     header img {
-      max-width: 200px;
-      margin-bottom: 1rem;
+      max-width: 300px;
+      width: 100%;
     }
-    header h1 {
-      font-size: 2rem;
-      color: #333;
-    }
-    .cta-button {
-      margin-top: 1.5rem;
-      padding: 1rem 2rem;
-      background-color: #ff92ab;
-      color: white;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
+    .hero-text {
+      font-size: 1.4rem;
+      margin-top: 0.5rem;
+      color: #444;
     }
     .section {
       padding: 3rem 1rem;
       text-align: center;
     }
     .section h2 {
-      font-size: 2rem;
+      margin-bottom: 1rem;
       color: #e76f51;
-      margin-bottom: 2rem;
+      font-size: 2rem;
     }
     .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
+      margin-top: 2rem;
     }
     .product {
-      background: white;
-      border-radius: 16px;
-      padding: 1rem;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      width: 280px;
     }
     .product img {
       width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 12px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
     }
     .product h3 {
-      margin-top: 1rem;
-      font-size: 1.2rem;
+      margin: 0.5rem 0 0.2rem;
     }
     .product p {
+      font-size: 0.9rem;
       color: #666;
-      font-size: 0.95rem;
     }
-    .why, .howto, .about, .reviews {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1.5rem;
+    .cta-button {
+      display: inline-block;
       margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #ff92ab;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
     }
-    .why-grid div {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    .howto ul {
+      list-style: none;
+      padding: 0;
+    }
+    .howto li {
+      margin: 1rem 0;
+      font-size: 1rem;
     }
     footer {
-      background: #fff;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
+      background: #fff;
+      margin-top: 3rem;
     }
-    footer a {
+    a {
       color: #e76f51;
       text-decoration: none;
     }
@@ -102,29 +89,41 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Dewrella Logo">
-    <h1>Glow Naturally. Chill Effortlessly.</h1>
-    <a href="https://wa.me/919709899812?text=Hi%2C%20I%20want%20to%20order%20Dewrella%20products" class="cta-button">Shop Now on WhatsApp</a>
+    <img src="images/logo.png" alt="Dewrella Logo" />
+    <p class="hero-text">Glow Naturally. Chill Effortlessly.</p>
   </header>  <section class="section" id="products">
-    <h2>Our Bestsellers</h2>
+    <h2>Our Products</h2>
     <div class="products">
       <div class="product">
-        <img src="images/ice-roller.jpg" alt="Ice Roller">
+        <img src="images/ice-roller.jpg" alt="Ice Roller" />
         <h3>Ice Roller</h3>
-        <p>Reduce puffiness, shrink pores, and cool down instantly.</p>
+        <p>Reduce puffiness and relax your skin</p>
       </div>
       <div class="product">
-        <img src="images/face-brush.jpg" alt="Face Brush">
+        <img src="images/face-brush.jpg" alt="Silicone Face Brush" />
         <h3>Silicone Face Brush</h3>
-        <p>Deep cleansing with soft bristles for your daily glow.</p>
+        <p>Soft & gentle cleansing for daily glow</p>
       </div>
       <div class="product">
-        <img src="images/glow-combo.jpg" alt="Glow Combo">
-        <h3>Glow Combo Set</h3>
-        <p>Includes Ice Roller, Face Brush & Cute Pouch</p>
+        <img src="images/glow-combo.png" alt="Glow Combo" />
+        <h3>Glow Combo</h3>
+        <p>Ice Roller + Silicone Brush – perfect pair</p>
       </div>
     </div>
-  </section>  <section class="section why">
-    <h2>Why Dewrella?</h2>
-    <div class="why-grid">
-      <div><strong>🌱 Natural Glow</strong><br> Tools to enhance skin freshness</div
+    <a class="cta-button" href="https://wa.me/919709899812?text=Hi%2C%20I%20want%20to%20order%20Dewrella%20products">Order on WhatsApp</a>
+  </section>  <section class="section howto" id="howtouse">
+    <h2>How to Use</h2>
+    <ul>
+      <li><strong>Ice Roller:</strong> Freeze, roll gently on face, relax & glow ✨</li>
+      <li><strong>Face Brush:</strong> Wet face, apply cleanser, massage in circles 🧼</li>
+    </ul>
+  </section>  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We’re three friends from Bihar building Dewrella – a skincare tools brand with a heart. Handmade packing, cute tools & chill vibes.</p>
+  </section>  <footer>
+    <p>Follow us on <a href="https://instagram.com/dewrella.in" target="_blank">@dewrella.in</a></p>
+    <p>Contact: 9709899812 | dewrellaskin@gmail.com</p>
+    <p>&copy; Dewrella 2025</p>
+  </footer>
+</body>
+</html>
