@@ -9,10 +9,31 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #fcefee, #e2f7f3);
       color: #333;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: #ffffffcc;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #e76f51;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     header {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem;
     }
     header img {
       max-width: 180px;
@@ -64,7 +85,13 @@
   </style>
 </head>
 <body>
-  <header>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#howtouse">How to Use</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQs</a>
+  </nav>  <header>
     <img src="images/logo.png" alt="Dewrella Logo" />
     <h1>Glow Naturally. Chill Effortlessly.</h1>
   </header>  <section class="section" id="products">
@@ -85,8 +112,6 @@
       <p>Ice Roller + Silicone Brush – perfect pair</p>
     </div>
     <a class="cta-button" href="https://wa.me/919709899812?text=Hi%2C%20I%20want%20to%20order%20Dewrella%20products">Order on WhatsApp</a>
-    <br><br>
-    <a class="cta-button" href="https://forms.gle/TqBP6atjz9TAugmc6">Order via Form</a>
   </section>  <section class="section howto" id="howtouse">
     <h2>How to Use</h2>
     <ul>
