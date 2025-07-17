@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,31 +10,10 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #fcefee, #e2f7f3);
       color: #333;
-      scroll-behavior: smooth;
-    }
-    nav {
-      background-color: #ffffffcc;
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    nav a {
-      text-decoration: none;
-      color: #e76f51;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
     }
     header {
       text-align: center;
-      padding: 2rem 1rem 1rem;
+      padding: 2rem 1rem;
     }
     header img {
       max-width: 180px;
@@ -46,12 +26,19 @@
       margin-bottom: 1rem;
       color: #e76f51;
     }
+    .products-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
     .product {
-      margin: 1.5rem auto;
-      max-width: 300px;
+      width: 280px;
     }
     .product img {
       width: 100%;
+      height: 280px;
+      object-fit: cover;
       border-radius: 16px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
@@ -60,7 +47,7 @@
     }
     .cta-button {
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 2rem;
       padding: 0.8rem 1.5rem;
       background-color: #ff92ab;
       color: white;
@@ -85,54 +72,62 @@
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#products">Products</a>
-    <a href="#howtouse">How to Use</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#about">About</a>
-    <a href="#faq">FAQs</a>
-  </nav>  <header>
+  <header>
     <img src="images/logo.png" alt="Dewrella Logo" />
     <h1>Glow Naturally. Chill Effortlessly.</h1>
-  </header>  <section class="section" id="products">
+  </header>
+
+  <section class="section" id="products">
     <h2>Our Products</h2>
-    <div class="product">
-      <img src="images/ice-roller.jpg" alt="Ice Roller" />
-      <h3>Ice Roller</h3>
-      <p>Reduce puffiness and relax your skin</p>
-    </div>
-    <div class="product">
-      <img src="images/face-brush.jpg" alt="Silicone Face Brush" />
-      <h3>Silicone Face Brush</h3>
-      <p>Soft & gentle cleansing for daily glow</p>
-    </div>
-    <div class="product">
-      <img src="images/glow-combo.jpg" alt="Glow Combo" />
-      <h3>Glow Combo</h3>
-      <p>Ice Roller + Silicone Brush – perfect pair</p>
+    <div class="products-row">
+      <div class="product">
+        <img src="images/ice-roller.jpg" alt="Ice Roller" />
+        <h3>Ice Roller</h3>
+        <p>Reduce puffiness and relax your skin</p>
+      </div>
+      <div class="product">
+        <img src="images/face-brush.jpg" alt="Silicone Face Brush" />
+        <h3>Silicone Face Brush</h3>
+        <p>Soft & gentle cleansing for daily glow</p>
+      </div>
+      <div class="product">
+        <img src="images/glow-combo.jpg" alt="Glow Combo" />
+        <h3>Glow Combo</h3>
+        <p>Ice Roller + Silicone Brush – perfect pair</p>
+      </div>
     </div>
     <a class="cta-button" href="https://wa.me/919709899812?text=Hi%2C%20I%20want%20to%20order%20Dewrella%20products">Order on WhatsApp</a>
-  </section>  <section class="section howto" id="howtouse">
+  </section>
+
+  <section class="section howto" id="howtouse">
     <h2>How to Use</h2>
     <ul>
       <li><strong>Ice Roller:</strong> Freeze, roll gently on face, relax & glow ✨</li>
       <li><strong>Face Brush:</strong> Wet face, apply cleanser, massage in circles 🧼</li>
     </ul>
-  </section>  <section class="section" id="reviews">
+  </section>
+
+  <section class="section" id="reviews">
     <h2>Customer Reviews</h2>
     <p>"Loved the packaging & cooling effect!" – Priya, Delhi</p>
     <p>"Softest brush ever used!" – Aanya, Bangalore</p>
-  </section>  <section class="section" id="about">
+  </section>
+
+  <section class="section" id="about">
     <h2>About Us</h2>
     <p>We’re three friends from Bihar building Dewrella – a skincare tools brand with a heart. Handmade packing, cute tools & chill vibes.</p>
-  </section>  <section class="section faq" id="faq">
+  </section>
+
+  <section class="section faq" id="faq">
     <h2>FAQs</h2>
     <ul>
       <li><strong>Delivery:</strong> 2–7 days PAN India</li>
       <li><strong>Payment:</strong> UPI prepaid via WhatsApp</li>
       <li><strong>Returns:</strong> Only for damaged items within 24 hrs</li>
     </ul>
-  </section>  <footer>
+  </section>
+
+  <footer>
     <p>Follow us on <a href="https://instagram.com/dewrella.in" target="_blank">@dewrella.in</a></p>
     <p>Contact: 9709899812 | dewrellaskin@gmail.com</p>
     <p>&copy; Dewrella 2025</p>
