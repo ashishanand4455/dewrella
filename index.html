@@ -1,135 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dewrella | Glow Tools</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dewrella - Glow Tools</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
     body {
-      background: linear-gradient(to bottom right, #fce8ec, #d5f4eb);
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fcefee, #e2f7f3);
       color: #333;
     }
     header {
       text-align: center;
-      padding: 40px 20px 20px;
+      padding: 3rem 1rem;
     }
     header img {
-      max-width: 300px;
-      height: auto;
+      max-width: 250px;
+      width: 100%;
     }
     .section {
-      padding: 40px 20px;
+      padding: 2rem 1rem;
       text-align: center;
     }
     .section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-      color: #111;
+      margin-bottom: 1rem;
+      color: #e76f51;
     }
-    .section p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      color: #555;
-    }
-    .products {
+    .product-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
+      gap: 2rem;
     }
     .product {
-      max-width: 300px;
-      background: #fff;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      width: 300px;
     }
     .product img {
       width: 100%;
-      display: block;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    .product p {
-      padding: 10px 15px;
-      font-weight: 600;
-      color: #333;
+    .product h3 {
+      margin-top: 0.5rem;
     }
     .cta-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 30px;
-      background: #ffa6c9;
-      color: #fff;
-      font-weight: bold;
-      border: none;
-      border-radius: 30px;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #ff92ab;
+      color: white;
       text-decoration: none;
-      transition: 0.3s ease;
+      border-radius: 8px;
+      font-weight: bold;
     }
-    .cta-button:hover {
-      background: #f973b3;
-    }
-    .footer {
+    footer {
       text-align: center;
-      padding: 30px 20px;
-      font-size: 0.95rem;
-      color: #555;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      background: #fff;
+      margin-top: 2rem;
     }
-    .footer a {
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
+    .howto ul, .faq ul {
+      list-style: none;
+      padding: 0;
+    }
+    .howto li, .faq li {
+      margin: 0.5rem 0;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.jpg" alt="Dewrella Logo" />
-  </header>
-
-  <section class="section">
-    <h2>Welcome to Dewrella</h2>
-    <p>Your one-stop shop for skincare glow tools. Feel fresh, calm & beautiful every day.</p>
-    <a href="https://wa.me/919709899812" class="cta-button" target="_blank">Order on WhatsApp</a>
-  </section>
-
-  <section class="section" id="products">
+    <img src="images/logo.png" alt="Dewrella Logo" />
+    <h1>Glow Naturally. Chill Effortlessly.</h1>
+  </header>  <section class="section" id="products">
     <h2>Our Products</h2>
-    <div class="products">
+    <div class="product-grid">
       <div class="product">
-        <img src="face-brush.jpg" alt="Silicone Face Brush"/>
-        <p>Silicone Face Brush</p>
+        <img src="images/ice-roller.jpg" alt="Ice Roller" />
+        <h3>Ice Roller</h3>
+        <p>Reduce puffiness and relax your skin</p>
       </div>
       <div class="product">
-        <img src="ice-roller.jpg" alt="Ice Roller"/>
-        <p>Ice Roller</p>
+        <img src="images/face-brush.jpg" alt="Silicone Face Brush" />
+        <h3>Silicone Face Brush</h3>
+        <p>Soft & gentle cleansing for daily glow</p>
       </div>
       <div class="product">
-        <img src="combo.jpg" alt="Glow Combo (Roller + Brush + Pouch)"/>
-        <p>Glow Combo Set</p>
+        <img src="images/glow-combo.png" alt="Glow Combo" />
+        <h3>Glow Combo</h3>
+        <p>Ice Roller + Silicone Brush – perfect pair</p>
       </div>
     </div>
-  </section>
-
-  <section class="section" id="how-to-use">
+    <a class="cta-button" href="https://wa.me/919709899812?text=Hi%2C%20I%20want%20to%20order%20Dewrella%20products">Order on WhatsApp</a>
+  </section>  <section class="section howto" id="howtouse">
     <h2>How to Use</h2>
-    <p><strong>Ice Roller:</strong> Keep in freezer, then roll on clean skin to depuff, calm & refresh.</p>
-    <p><strong>Face Brush:</strong> Add cleanser and gently massage in circles for deep pore cleaning.</p>
-  </section>
-
-  <div class="footer">
-    © 2025 Dewrella – Glow Tools | Follow us on Instagram:
-    <a href="https://instagram.com/dewrella.in" target="_blank">@dewrella.in</a>
-  </div>
-
+    <ul>
+      <li><strong>Ice Roller:</strong> Freeze, roll gently on face, relax & glow ✨</li>
+      <li><strong>Face Brush:</strong> Wet face, apply cleanser, massage in circles 🧼</li>
+    </ul>
+  </section>  <section class="section" id="reviews">
+    <h2>Customer Reviews</h2>
+    <p>"Loved the packaging & cooling effect!" – Priya, Delhi</p>
+    <p>"Softest brush ever used!" – Aanya, Bangalore</p>
+  </section>  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We’re three friends from Bihar building Dewrella – a skincare tools brand with a heart. Handmade packing, cute tools & chill vibes.</p>
+  </section>  <section class="section faq" id="faq">
+    <h2>FAQs</h2>
+    <ul>
+      <li><strong>Delivery:</strong> 2–7 days PAN India</li>
+      <li><strong>Payment:</strong> UPI prepaid via WhatsApp</li>
+      <li><strong>Returns:</strong> Only for damaged items within 24 hrs</li>
+    </ul>
+  </section>  <footer>
+    <p>Follow us on <a href="https://instagram.com/dewrella.in" target="_blank">@dewrella.in</a></p>
+    <p>Contact: 9709899812 | dewrellaskin@gmail.com</p>
+    <p>&copy; Dewrella 2025</p>
+  </footer>
 </body>
 </html>
